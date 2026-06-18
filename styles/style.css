@@ -1,0 +1,210 @@
+body {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+header {
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 35px;
+
+    border-radius: 50px;
+
+    background-color: rgba(255,255,255,0.45);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.logo {
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    color: #0072B2;
+
+    cursor: default;
+}
+
+.nav-links {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 35px;
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-weight: 600;
+
+    position: relative;
+
+    transition: color 0.3s;
+}
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 3px;
+
+    background-color: #E69F00;
+
+    transition: width 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    color: #E69F00;
+}
+
+
+.nav-links a:hover::after {
+
+    width: 100%;
+}
+/* Hero section */
+#hero {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 10%;
+
+    /* Background image */
+    background-image: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.25)
+        ),
+        url("../images/background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Container with text */
+.hero-content {
+    max-width: 600px;
+}
+
+
+/* Name */
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+
+/* Job title */
+.hero-content h2 {
+    color: #0072B2;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+/* Description */
+.hero-content p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 550px;
+    margin-bottom: 40px;
+}
+
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+}
+
+
+/* Buttons */
+.button {
+    display: inline-block;
+
+    background-color: #E69F00;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 32px;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+/* Hover effect */
+.button:hover {
+    background-color: #005580;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section:not(#hero) {
+
+    min-height: 100vh;
+
+    padding: 100px 10%;
+}
