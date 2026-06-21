@@ -356,3 +356,519 @@ section:not(#hero) {
     cursor: default;
     transform: none;
 }
+
+/* Skill section*/
+
+skills {
+    background-color: #F5F5F5;
+    padding: 80px 10%;
+}
+
+
+/* Three main columns */
+
+.skills-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+    align-items: start;
+}
+
+
+/* Column titles */
+
+.skill-column h3 {
+
+    color: #0072B2;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+
+/* Individual skill */
+
+.skill-card {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Logo */
+
+.skill-icon {
+
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+}
+
+
+.skill-icon img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* Text */
+
+.skill-text h4 {
+
+    color: #0072B2;
+
+    font-size: 1.05rem;
+
+    margin: 0 0 6px 0;
+    text-align: left;
+}
+
+
+.skill-text p {
+
+    color: #555;
+
+    font-size: 0.9rem;
+
+    line-height: 1.4;
+
+    margin: 0;
+    text-align: left;
+
+}
+
+/* Philosophy section */
+
+
+#philosophy {
+    background-color: white;
+    padding: 80px 10%;
+}
+
+
+/* Two-column layout */
+
+.philosophy-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* Philosophy cards */
+
+.philosophy-card {
+
+    background-color: #F8F8F8;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border-left: 6px solid #0072B2;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+/* Titles */
+
+.philosophy-card h3 {
+
+    color: #0072B2;
+
+    font-size: 1.3rem;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+
+}
+
+
+/* Text */
+
+.philosophy-card p {
+
+    color: #555;
+
+    line-height: 1.6;
+
+    margin: 0;
+
+    font-size: 0.95rem;
+
+}
+
+
+/*Journey*/
+
+/* ================================ */
+/*           MY JOURNEY              */
+/* ================================ */
+
+#journey {
+    background-color: #f5f5f5;
+    padding: 80px 10%;
+}
+
+
+/* Introduction text */
+
+.journey-intro {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+
+    text-align: center;
+
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Timeline container */
+
+.journey-timeline {
+
+    position: relative;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* Vertical line */
+
+.journey-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 35px;
+    top: 0;
+    bottom: 0;
+
+    width: 4px;
+
+    background-color: #0072B2;
+
+    border-radius: 5px;
+}
+
+
+/* Each chapter */
+
+.journey-chapter {
+
+    position: relative;
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-bottom: 60px;
+}
+
+
+/* Icon */
+
+.chapter-icon {
+
+    position: relative;
+
+    width: 70px;
+    height: 70px;
+
+    min-width: 70px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    border: 4px solid #0072B2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.chapter-icon img {
+
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+}
+
+
+/* Content card */
+
+.chapter-content {
+
+    flex: 1;
+
+    background-color: white;
+
+    padding: 25px 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+/* Title */
+
+.chapter-content h3 {
+
+    margin-top: 0;
+
+    margin-bottom: 8px;
+
+    color: #0072B2;
+
+    font-size: 1.4rem;
+}
+
+
+/* Year */
+
+.chapter-period {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-weight: bold;
+
+    color: #E69F00;
+}
+
+
+/* Paragraph */
+
+.chapter-content p {
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+/* Lists */
+
+.chapter-content ul {
+
+    margin-top: 15px;
+
+    padding-left: 20px;
+
+    color: #444;
+
+    line-height: 1.5;
+}
+
+
+.chapter-content li {
+
+    margin-bottom: 8px;
+}
+
+
+/* Last item */
+
+.journey-chapter:last-child {
+
+    margin-bottom: 0;
+}
+
+
+/* Future chapter highlight */
+
+.future .chapter-icon {
+
+    border-color: #009E73;
+}
+
+
+.future .chapter-content h3 {
+
+    color: #009E73;
+}
+
+/* About section */
+
+/* ================================ */
+/*              ABOUT                */
+/* ================================ */
+
+#about {
+    background-color: #f5f5f5;
+    padding: 80px 10%;
+}
+
+
+/* Main layout */
+
+.about-container {
+
+    display: flex;
+    gap: 50px;
+
+    align-items: center;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Photo */
+
+.about-image {
+
+    flex: 0 0 320px;
+}
+
+
+.about-image img {
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #0072B2;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* Text */
+
+.about-content {
+
+    flex: 1;
+}
+
+
+.about-content p {
+
+    color: #555;
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+
+    text-align: justify;
+}
+
+
+/* Contact section */
+
+.contact-links {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.contact-links a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #0072B2;
+
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+
+.contact-links a:hover {
+
+    color: #E69F00;
+}
+
+
+.contact-links img {
+
+    width: 24px;
+
+    height: 24px;
+
+    object-fit: contain;
+}
+
+
+/* ============================= */
+/*           Responsive           */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .about-container {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .about-content p {
+
+        text-align: left;
+    }
+
+
+    .contact-links {
+
+        justify-content: center;
+    }
+
+
+    .about-image {
+
+        flex: 0 0 220px;
+
+        width: 220px;
+    }
+
+}

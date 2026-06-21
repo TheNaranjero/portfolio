@@ -1,0 +1,257 @@
+   /*Fuentes*/
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    /* Paleta Okabe-Ito */
+    :root {
+      /*--naranja: #E69F00;  
+      --celeste: #56B4E9;*/   
+      --naranja: #FF8C00;/*R: DarkOrange*/
+      --celeste: #6CA6CD;/*R: Skyblue3*/
+      
+      --gris-oscuro: #333;
+      --blanco: #fff;
+      --naranja-oscuro: #d46a00;
+      --celeste-oscuro: #28536b;
+    }
+
+    body {
+      font-family: "Ubuntu", sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+      color: var(--gris-oscuro);
+ 
+    }
+
+  
+
+    /* ENCABEZADO */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: var(--blanco);
+        border-bottom: 2px solid var(--celeste);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--naranja);
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--gris-oscuro);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--naranja);
+    }
+
+    /* SECCIÓN DE BIENVENIDA */
+    .hero {
+      background-color: var(--celeste);
+      padding: 3rem 2rem;
+      text-align: center;
+      color: var(--blanco);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero a {
+      background-color: var(--naranja);
+      color: var(--blanco);
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+        transition: background-color 0.3s, transform 0.2s;
+
+    }
+
+
+.hero a:hover {
+  background-color: #d68800;
+}
+
+
+.section-title {
+  color: var(--naranja);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+    /* GRILLA DE PROYECTOS */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .project-card {
+      background-color: var(--blanco);
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.1);
+    }
+
+  .project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+    .project-card .content {
+      padding: 1rem;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: var(--naranja);
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tools {
+      font-size: 0.85rem;
+      color: var(--celeste);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .project-card a {
+      color: var(--naranja);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+/*habilidades*/
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.skill-card img {
+
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+
+.skill-card .stars {
+  font-size: 1.2rem;
+  color: var(--naranja);
+  margin-top: 0.2rem;
+}
+.stars {
+  color: var(--naranja);
+}
+.topics-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.topic-icon {
+  width: 28px;       /* Ajusta según tu gusto */
+  height: 28px;      /* Para mantener proporción */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.topics-list li {
+  display: flex;
+  align-items: center;
+}
+
+
+/*Contacto*/
+.contact-button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  background-color: var(--celeste);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: var(--celeste-oscuro) ; /* tono más oscuro */
+}
+
+.contact-icon {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  max-height: 24px;
+}
+
+
+    
+/* Tablets: 2 columnas */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celulares: 1 columna */
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+   .project-card .content {
+    padding: 0.8rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
