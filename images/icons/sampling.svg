@@ -1,0 +1,90 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Okabe-Ito palette -->
+  <!-- orange: #E69F00 | sky blue: #56B4E9 -->
+
+  <g>
+
+    <!-- GRID OF POINTS (blue = unsampled) -->
+    <!-- row 1 -->
+    <circle cx="90" cy="90" r="6" fill="#56B4E9"></circle>
+    <circle cx="150" cy="90" r="6" fill="#56B4E9"></circle>
+    <circle cx="210" cy="90" r="6" fill="#56B4E9"></circle>
+    <circle cx="270" cy="90" r="6" fill="#56B4E9"></circle>
+    <circle cx="330" cy="90" r="6" fill="#56B4E9"></circle>
+    <circle cx="390" cy="90" r="6" fill="#56B4E9"></circle>
+
+    <!-- row 2 -->
+    <circle cx="90" cy="150" r="6" fill="#56B4E9"></circle>
+    <circle cx="150" cy="150" r="6" fill="#56B4E9"></circle>
+    <circle cx="210" cy="150" r="6" fill="#56B4E9"></circle>
+    <circle cx="270" cy="150" r="6" fill="#56B4E9"></circle>
+    <circle cx="330" cy="150" r="6" fill="#56B4E9"></circle>
+    <circle cx="390" cy="150" r="6" fill="#56B4E9"></circle>
+
+    <!-- row 3 -->
+    <circle cx="90" cy="210" r="6" fill="#56B4E9"></circle>
+    <circle cx="150" cy="210" r="6" fill="#56B4E9"></circle>
+    <circle cx="210" cy="210" r="6" fill="#56B4E9"></circle>
+    <circle cx="270" cy="210" r="6" fill="#56B4E9"></circle>
+    <circle cx="330" cy="210" r="6" fill="#56B4E9"></circle>
+    <circle cx="390" cy="210" r="6" fill="#56B4E9"></circle>
+
+    <!-- row 4 -->
+    <circle cx="90" cy="270" r="6" fill="#56B4E9"></circle>
+    <circle cx="150" cy="270" r="6" fill="#56B4E9"></circle>
+    <circle cx="210" cy="270" r="6" fill="#56B4E9"></circle>
+    <circle cx="270" cy="270" r="6" fill="#56B4E9"></circle>
+    <circle cx="330" cy="270" r="6" fill="#56B4E9"></circle>
+    <circle cx="390" cy="270" r="6" fill="#56B4E9"></circle>
+
+    <!-- row 5 -->
+    <circle cx="90" cy="330" r="6" fill="#56B4E9"></circle>
+    <circle cx="150" cy="330" r="6" fill="#56B4E9"></circle>
+    <circle cx="210" cy="330" r="6" fill="#56B4E9"></circle>
+    <circle cx="270" cy="330" r="6" fill="#56B4E9"></circle>
+    <circle cx="330" cy="330" r="6" fill="#56B4E9"></circle>
+    <circle cx="390" cy="330" r="6" fill="#56B4E9"></circle>
+
+    <!-- row 6 -->
+    <circle cx="90" cy="390" r="6" fill="#56B4E9"></circle>
+    <circle cx="150" cy="390" r="6" fill="#56B4E9"></circle>
+    <circle cx="210" cy="390" r="6" fill="#56B4E9"></circle>
+    <circle cx="270" cy="390" r="6" fill="#56B4E9"></circle>
+    <circle cx="330" cy="390" r="6" fill="#56B4E9"></circle>
+    <circle cx="390" cy="390" r="6" fill="#56B4E9"></circle>
+
+    <!-- SAMPLING RECTANGLES (now proper rectangles with unequal side emphasis corrected consistently) -->
+
+    <!-- rectangle 1 (horizontal sampling window) -->
+    <rect x="120" y="120" width="200" height="120" fill="none" stroke="#E69F00" stroke-width="8"></rect>
+
+    <!-- rectangle 2 (vertical sampling window) -->
+    <rect x="260" y="180" width="120" height="200" fill="none" stroke="#E69F00" stroke-width="8"></rect>
+
+    <!-- rectangle 3 (horizontal bottom window) -->
+    <rect x="70" y="310" width="220" height="120" fill="none" stroke="#E69F00" stroke-width="8"></rect>
+
+    <!-- SAMPLED POINTS (ALL dots inside rectangles are orange) -->
+
+    <!-- rect 1 -->
+    <circle cx="150" cy="150" r="6" fill="#E69F00"></circle>
+    <circle cx="210" cy="150" r="6" fill="#E69F00"></circle>
+    <circle cx="210" cy="210" r="6" fill="#E69F00"></circle>
+    <circle cx="270" cy="150" r="6" fill="#E69F00"></circle>
+
+    <!-- rect 2 -->
+    <circle cx="270" cy="210" r="6" fill="#E69F00"></circle>
+    <circle cx="330" cy="210" r="6" fill="#E69F00"></circle>
+    <circle cx="270" cy="270" r="6" fill="#E69F00"></circle>
+    <circle cx="330" cy="270" r="6" fill="#E69F00"></circle>
+    <circle cx="330" cy="330" r="6" fill="#E69F00"></circle>
+
+    <!-- rect 3 -->
+    <circle cx="90" cy="330" r="6" fill="#E69F00"></circle>
+    <circle cx="150" cy="330" r="6" fill="#E69F00"></circle>
+    <circle cx="210" cy="330" r="6" fill="#E69F00"></circle>
+    <circle cx="150" cy="390" r="6" fill="#E69F00"></circle>
+
+  </g>
+</svg>

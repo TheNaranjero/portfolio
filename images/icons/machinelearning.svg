@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100">
+
+    <!-- Connections -->
+    <line x1="60" y1="20" x2="35" y2="45" stroke="#222222" stroke-width="5" stroke-linecap="round"></line>
+
+    <line x1="60" y1="20" x2="85" y2="45" stroke="#222222" stroke-width="5" stroke-linecap="round"></line>
+
+    <line x1="35" y1="45" x2="20" y2="75" stroke="#222222" stroke-width="5" stroke-linecap="round"></line>
+
+    <line x1="35" y1="45" x2="50" y2="75" stroke="#222222" stroke-width="5" stroke-linecap="round"></line>
+
+    <line x1="85" y1="45" x2="70" y2="75" stroke="#222222" stroke-width="5" stroke-linecap="round"></line>
+
+    <line x1="85" y1="45" x2="100" y2="75" stroke="#222222" stroke-width="5" stroke-linecap="round"></line>
+
+    <!-- Root -->
+    <circle cx="60" cy="20" r="10" fill="#56B4E9"></circle>
+
+    <!-- Internal decision nodes -->
+    <circle cx="35" cy="45" r="8" fill="#7A7A7A"></circle>
+
+    <circle cx="85" cy="45" r="8" fill="#7A7A7A"></circle>
+
+    <!-- Prediction leaves -->
+    <circle cx="20" cy="75" r="8" fill="#E69F00"></circle>
+
+    <circle cx="50" cy="75" r="8" fill="#E69F00"></circle>
+
+    <circle cx="70" cy="75" r="8" fill="#E69F00"></circle>
+
+    <circle cx="100" cy="75" r="8" fill="#E69F00"></circle>
+
+</svg>

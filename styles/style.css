@@ -1,8 +1,34 @@
+/*
+    Personal Portfolio CSS
+*/
+
+
+/* OKABE ITO PALETE */
+
+:root {
+    /* Okabe-Ito color palette */
+    --oi-black: #000000;
+    --oi-orange: #E69F00;
+    --oi-sky-blue: #56B4E9;
+    --oi-bluish-green: #009E73;
+    --oi-yellow: #F0E442;
+    --oi-blue: #0072B2;
+    --oi-vermilion: #D55E00;
+    --oi-reddish-purple: #CC79A7;
+
+    /* Optional neutrals for the website */
+    --background-color: #FAFAFA;
+    --text-color: #222222;
+    --text-secondary: #555555;
+    --border-color: #DDDDDD;
+}
+
+
 body {
     background-color: #ffffff;
     color: black;
     text-align: center;
-    font-size: 24px;
+    /*font-size: 24px;*/
 }
 
 /* Remove default browser spacing */
@@ -11,6 +37,16 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+/*Space between the sections*/
+
+section {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    padding-top: 0% ;
+
+}
+
 
 /* Navigation bar */
 header {
@@ -30,19 +66,23 @@ header {
 nav {
     display: flex;
 
+    overflow: hidden;
+
     justify-content: space-between;
 
     align-items: center;
 
-    padding: 15px 35px;
+    flex-wrap: nowrap;
 
-    border-radius: 50px;
+    padding: 0.75rem 1.5rem;; 
+
+    border-radius: 20px;
 
     background-color: rgba(255,255,255,0.45);
 
     backdrop-filter: blur(10px);
 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
 
 
@@ -52,7 +92,7 @@ nav {
 
     font-weight: 800;
 
-    color: #0072B2;
+    color: var(--oi-blue);
 
     cursor: default;
 }
@@ -63,7 +103,11 @@ nav {
 
     list-style: none;
 
-    gap: 35px;
+    white-space: nowrap;
+
+    gap: clamp(0.5rem, 1rem, 2rem);
+
+    
 }
 
 
@@ -71,9 +115,10 @@ nav {
 
     text-decoration: none;
 
-    color: #222;
+    color: var(--oi-blue);
 
     font-weight: 600;
+    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
 
     position: relative;
 
@@ -92,7 +137,7 @@ nav {
     width: 0;
     height: 3px;
 
-    background-color: #E69F00;
+    background-color: var(--oi-orange);
 
     transition: width 0.3s;
 }
@@ -100,7 +145,7 @@ nav {
 
 .nav-links a:hover {
 
-    color: #E69F00;
+    color: var(--oi-orange);
 }
 
 
@@ -115,7 +160,8 @@ nav {
     display: flex;
     align-items: center;
 
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 
     /* Background image */
     background-image: 
@@ -136,7 +182,9 @@ nav {
 
 /* Container with text */
 .hero-content {
-    max-width: 600px;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 0%;
 }
 
 
@@ -144,16 +192,16 @@ nav {
 .hero-content h1 {
     font-size: 4rem;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: 5%;
 }
 
 
 /* Job title */
 .hero-content h2 {
-    color: #0072B2;
-    font-size: 1.5rem;
+    color: var(--oi-blue);  
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 5%;
 }
 
 
@@ -161,17 +209,22 @@ nav {
 .hero-content p {
     font-size: 1.25rem;
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 100%;
     margin-bottom: 40px;
+    text-align: left    ;
+
 }
 
 
 /* Buttons container */
 .buttons {
-    max-width: 800px;
+    max-width: 50%;
+    margin-left: 25%;
     display: flex;
-    gap: 20px;
+    gap: 10%;
+    justify-content: center;
     align-content: center;
+
 }
 
 
@@ -179,7 +232,7 @@ nav {
 .button {
     display: inline-block;
 
-    background-color: #E69F00;
+    background-color: var(--oi-orange);
     color: white;
 
     text-decoration: none;
@@ -208,9 +261,9 @@ html {
 
 section:not(#hero) {
 
-    min-height: 100vh;
+    min-height: 10vh;
 
-    padding: 100px 10%;
+    padding: 50px 10%;
 }
 
 
@@ -222,7 +275,7 @@ section:not(#hero) {
 .section-title {
     text-align: center;
     font-size: 3rem;
-    color: #0072B2;
+    color: var(--oi-blue);
     margin-bottom: 50px;
 }
 
@@ -871,4 +924,28 @@ skills {
         width: 220px;
     }
 
+}
+
+
+
+/* CORRECTION FOR PHONES */
+
+
+@media (max-width: 599px) {
+    /* HEADER */
+    /* Hide links */
+
+    header{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
 }

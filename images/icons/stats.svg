@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100">
+
+    <!-- Axis -->
+    <line x1="5" y1="80" x2="115" y2="80" stroke="#7A7A7A" stroke-width="4" stroke-linecap="round"></line>
+
+    <!-- Sky Blue Distribution -->
+    <path d="
+        M10 80
+        C15 80 20 60 28 45
+        C35 32 42 22 50 22
+        C58 22 65 32 72 45
+        C80 60 85 80 90 80" fill="none" stroke="#56B4E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+    <!-- Orange Distribution -->
+    <path d="
+        M30 80
+        C35 80 40 60 48 45
+        C55 32 62 22 70 22
+        C78 22 85 32 92 45
+        C100 60 105 80 110 80" fill="none" stroke="#E69F00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+</svg>

@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Okabe-Ito palette -->
+  <!-- blue: #56B4E9 | orange: #E69F00 -->
+
+  <g>
+
+    <!-- SCATTER POINTS (noisy S-shaped pattern) -->
+
+    <circle cx="60" cy="320" r="6" fill="#56B4E9"></circle>
+    <circle cx="90" cy="260" r="6" fill="#56B4E9"></circle>
+    <circle cx="120" cy="220" r="6" fill="#56B4E9"></circle>
+    <circle cx="150" cy="180" r="6" fill="#56B4E9"></circle>
+
+    <circle cx="180" cy="210" r="6" fill="#56B4E9"></circle>
+    <circle cx="210" cy="260" r="6" fill="#56B4E9"></circle>
+    <circle cx="240" cy="320" r="6" fill="#56B4E9"></circle>
+
+    <circle cx="270" cy="300" r="6" fill="#56B4E9"></circle>
+    <circle cx="300" cy="240" r="6" fill="#56B4E9"></circle>
+    <circle cx="330" cy="180" r="6" fill="#56B4E9"></circle>
+
+    <circle cx="360" cy="190" r="6" fill="#56B4E9"></circle>
+    <circle cx="390" cy="230" r="6" fill="#56B4E9"></circle>
+    <circle cx="420" cy="280" r="6" fill="#56B4E9"></circle>
+    <circle cx="450" cy="320" r="6" fill="#56B4E9"></circle>
+
+    <!-- LOESS SMOOTH CURVE (clear S-shape: up → down → up) -->
+    <path d="
+      M60 300
+      C110 200, 150 140, 190 190
+      C230 240, 260 340, 300 300
+      C340 260, 360 140, 410 180
+      C440 210, 460 260, 460 300
+    " fill="none" stroke="#E69F00" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  </g>
+</svg>
