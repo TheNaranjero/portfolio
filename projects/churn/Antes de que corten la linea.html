@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Antes de que corten la l&iacute;nea&colon; Modelado predictivo para la retenci&oacute;n de clientes</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="antes-de-que-corten-la-línea-modelado-predictivo-para-la-retención-de-clientes">Antes de que corten la línea: Modelado predictivo para la retención de clientes</h1>
+<p><img src="file:///c:\Users\User\Desktop\Proyectos\Portafolio\projects\Antes de que corten la linea\image-1.png" alt="&quot;Imagen decorativa, porcentajes extraidos de la tabla lift&quot;"></p>
+<h2 id="resultado-principal">Resultado Principal</h2>
+<ul>
+<li>El 20% de clientes con mayor riesgo concentra el 50% de las cancelaciones.</li>
+<li></li>
+<li>Aplicando un descuento del __% a estos clientes, las ganancias podrían incrementar en un __% (asumiendo un margen del 50%).</li>
+</ul>
+<h2 id="introducción">Introducción</h2>
+<p>La evasión de clientes, también conocida como churn, ocurre cuando un cliente decide cancelar un servicio o dejar de utilizar un producto. Este fenómeno representa un desafío estratégico para las empresas, ya que impacta directamente en la rentabilidad y el crecimiento sostenido.</p>
+<p>En este proyecto se analizan 7.266 registros de clientes de Telecom X con el objetivo de identificar los principales factores asociados a la cancelación y desarrollar modelos predictivos capaces de estimar el riesgo de churn.</p>
+<p>A partir de técnicas de análisis exploratorio, ingeniería de variables y modelado con múltiples algoritmos de machine learning, se construyen herramientas que permiten detectar clientes de alto riesgo y facilitar la implementación de estrategias de retención basadas en evidencia.</p>
+<h2 id="resumen">Resumen</h2>
+<ul>
+<li>La tasa de cancelación observada es del 27%.</li>
+<li>Se ajustaron 8 modelos predictivos con optimización de hiperparámetros.</li>
+<li>Bajo todas las métricas evaluadas, el mejor modelo fue la regresión logística regularizada.</li>
+<li>El modelo permite capturar el 80% de las cancelaciones concentrándolas en un grupo donde 1 de cada 2 clientes cancelará, duplicando el riesgo promedio.</li>
+<li>Esto permite construir un grupo de alto riesgo donde la probabilidad de cancelación es aproximadamente el doble que en la población general.</li>
+</ul>
+<h2 id="factores-más-importantes-asociados-al-riesgo-de-cancelación">Factores más importantes asociados al riesgo de cancelación:</h2>
+<ul>
+<li><strong>Antigüedad del cliente</strong>: Clientes más nuevos presentan mayor riesgo.</li>
+<li><strong>Gasto mensual</strong>: Mayor gasto implica mayor riesgo.</li>
+<li><strong>Tipo de internet</strong>: Fibra óptica tiene mayor riesgo que DSL y Sin internet</li>
+<li><strong>Tipo de contrato</strong>: Mensual tiene mayor riesgo que Anual y este que Bianual</li>
+</ul>
+<h2 id="posibles-acciones-generales">Posibles acciones generales</h2>
+<ul>
+<li>Enfocar promociones en los clientes más nuevos (0 a 6 meses), son los que mayor reducción de riesgo tienen.</li>
+<li>Enfocar promociones en los clientes de mayores gastos, reducir el costo de su plan implica retenerlo más tiempo.</li>
+<li>Analizar el caso de la fibra óptica y porque muestra cancelaciones más elevada. ¿La infraestructura funciona bien?</li>
+<li>Promocionar planes anuales o bianuales.</li>
+</ul>
+<h2 id="posibles-acciones-enfocadas">Posibles acciones enfocadas</h2>
+<ul>
+<li>Utilizar el modelo para focar recursos en el grupo de alto riesgo de cancelación (A), este representa una quinta parte de los clientes pero captura al 50% de las cancelaciones totales.</li>
+<li>Ignorar a los grupos de bajo riesgo (D y E), ellos representan el 40% de los clientes pero solo el 7% de las cancelaciones.</li>
+<li>De disponer más recursos se pueden atender al grupo B, acumulando el 80% de las cancelaciones.</li>
+</ul>
+<h2 id="lift">Lift</h2>
+<p>La siguiente gráfica presenta las ganancias respecto al azar del modelo. Concentrandonos en los grupos con mayor chance de cancelación identificamos hasta 2.5 veces mejor que seleccionando al azar.
+<img src="file:///c:\Users\User\Desktop\Proyectos\Portafolio\projects\Antes de que corten la linea\image-3.png" alt="Curva Lift"></p>
+<table>
+<thead>
+<tr>
+<th>Grupo</th>
+<th>Cantidad de clientes</th>
+<th>Riesgo de Cancelación</th>
+<th>Porcentaje Acumulado de Cancelaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>282</td>
+<td>66%</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>B</td>
+<td>281</td>
+<td>39%</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>C</td>
+<td>281</td>
+<td>17%</td>
+<td>93%</td>
+</tr>
+<tr>
+<td>D</td>
+<td>281</td>
+<td>8%</td>
+<td>99%</td>
+</tr>
+<tr>
+<td>E</td>
+<td>282</td>
+<td>0%</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Nota</em>: Resultados del modelo aplicado a la base de prueba, simulando su aplicación real.</p>
+<h2 id="advertencia">Advertencia</h2>
+<p>Este analisis asume que las variables fueron extraidas en el mismo momento del tiempo (mismo mes). Si en cambio pertenecen a un periodo del tiempo su interpretación cambiaría y requerirían un modelado diferente (analisis de supervivencia). Ejemplo: un cliente de 3 meses que canceló pasaría a ser tratado como un cliente de 1 mes que no canceló, luego de 2 meses que no canceló y finalemente como uno de 3 meses que si canceló, aportando mucha más información al modelo.</p>
+<h2 id="limpieza-de-la-base">Limpieza de la base</h2>
+<ul>
+<li>En este trabajo se cuenta con 7,267 registros de clientes de Telecom X y su condición (cancela o no).</li>
+<li>Los datos se encuentran en formato JSON por lo que se los normaliza. La base de datos resultante cuenta con 23 variables.</li>
+<li>Se elimnaron 24 registros que no tenían información sobre la evasión.</li>
+<li>Se eliminaron 11 registros que no tenían información sobre la antigüedad (los datos aparentan ser clientes nuevos que aún no tuvieron ocasión de cancelar o no).</li>
+<li>Se crearon un total de 19 variables recurriendo a transformaciones, agrupaciones y one-hot encoding.</li>
+<li>Se analizarón una a una las variables, su distribución y su relación con la cancelación.</li>
+<li>Se eliminaron variables redundantes o sin información.</li>
+</ul>
+<h1 id="análisis-exploratorio">Análisis exploratorio</h1>
+<h2 id="correlación-e-importancia">Correlación e Importancia</h2>
+<p><img src="file:///c:\Users\User\Desktop\Proyectos\Portafolio\projects\Antes de que corten la linea\image-2.png" alt="Mapa de calor de la correlación de las variables ; gráfico de barras de la importancia de las variables"></p>
+<p>Se observan variables altamente correlacionadas entre sí. Si bien no afecta la capacidad predictiva del modelo, puede alterar la interpretación del modelo a la vez que no aportan información nueva además de retrasar los entrenamientos. Se eliminan las variables: Streaming, Familia , subscripciones totales y sin internet (cuya información ya está contenida en dsl - fibra óptica).</p>
+<p>Observamos que las variables más importantes para determinar la evasión son con diferencia el tipo de contrato (mes a mes, anual, bianual) y la antigüedad del cliente. Le siguen el tipo de internet (dsl, fibra óptica, sin internet) y los gastos mensuales.</p>
+<p><em>Nota técnica: se utilizó un modelo de bosque aleatorio para medir la importancia de las variables, este modelo tiene la ventaja de capturar relaciones no lineales y ser facil de entrenar. La importancia se mide como la reducción promedio de la impureza.</em></p>
+<h2 id="variables-numéricas">Variables numéricas</h2>
+<p>(COMBOPLOT HISTOGRAMA + LINEA -- DE LAS DOS VARIABLES NUMÉRICAS MÁS IMPORTANTES, LA LINEA ES EL PORCENTAJE DE CANCELACIÓN  )</p>
+<h2 id="variables-categóricas">Variables Categóricas</h2>
+<p>(COMBOPLOT HISTOGRAMA + LINEA -- DE LAS DOS VARIABLES NUMÉRICAS MÁS IMPORTANTES, LA LINEA ES EL PORCENTAJE DE CANCELACIÓN  )</p>
+<h2 id="demás-variables-categóricas">Demás variables Categóricas</h2>
+<p>(GRÁFICO DE BARRAS -- EJE Y: NOMBRE DE LAS VARIABLES CATEGORICAS, EJE X:DIFERENCIA ABSOLUTA DEL PROCENTAJR DE CANCELACION))</p>
+<h2 id="separación-validación-cruzada">Separación, Validación cruzada,</h2>
+<p>Se explica el riesgo de &quot;memorizar&quot; la base de datos.
+Se explica que se separan las bases en Entrenamiento usada para ajustar modelos y Prueba utilizada para compararlos al final.
+Durante el entrenamiento se separan los datos en 10 grupos, se utilizan 9 y se prueban en el decimo grupo. Este método permite usar estimaciones insesgadas durante el entrenamiento.
+Gráfico que muestra un circulo (total de la base) del que salen dos flechas hacia dos circulos (Base de Entrenamiento, Base de Prueba). De la base de entrenamiento sale una flecha hacia 10 cuadrados. Uno de ellos marcado en rojo, se añade la nota: &quot;entrenar en 9, probar en 1, rotar&quot;.</p>
+<h2 id="estandarización">Estandarización</h2>
+<p>Se estandarizan los datos para igualar la variabilidad ya que algunos modelos tienden a confundir variabilidad con importancia, por ejemplo un modelo puede pensar que el salario de un cliente que varía desde $0 a $1,000,000 es más importante que la edad que varía de 18 a 100 años, y esta que su sexo que varía entre 0 y 1 (0= hombre, 1 = mujer).</p>
+<h2 id="modelos-de-referencia">Modelos de referencia</h2>
+<p>Se estiman dos modelos:</p>
+<ul>
+<li>Piso: Un árbol de decisión de un solo nivel, mucahs veces llamado &quot;tronco de decisión&quot;. Este modelo extremadamente simple dicta la mínima capacidad predictiva que deberían alcanzar nuestros modelos más complejos.</li>
+<li>Techo: Un árbol de decisión más profundo, que a diferencia de los demás esta probado en el conjunto de entrenamiento. A diferencia de los demás modelos, este está &quot;memorizando&quot; las respuestas por lo que ningún modelo debería poder vencerlo.</li>
+</ul>
+<h2 id="ajuste-de-modelos">Ajuste de modelos</h2>
+<p>Se explica brevemente el AUC.
+Se explica que los modelos trabajan con pesos para balancear los pesos.
+Se explica brevemente cada uno de los 8 modelos y se nombran sus parámetros.</p>
+<h2 id="selección-de-modelos">Selección de modelos</h2>
+<p>Se explica que los modelos están seteados para capturar el 80% de las cancelaciones, permitiendo una comparación justa.</p>
+<p><img src="file:///c:\Users\User\Desktop\Proyectos\Portafolio\projects\Antes de que corten la linea\image.png" alt="matrices de confusión"></p>
+<p>Las matrices de confusión presentan tanto las veces que el modelo predijo bien como mal la clase, tanto para los clientes que cancelaron como los que no.
+Recordamos que preparamos los modelos para capturar el 80% de los clientes que cancelan, por lo que la línea inferior de la matrices son idénticas (70 mal clasificados, 300 capturados). Por lo que la diferencia radica en la línea superior de las matrices. Notamos que estas son practicamente idénticas, salvo el caso del árbol de decisión. Todas identifican correctamente a aproximadamente 750 clientes que no cancelaron. De todas ellas notamos que bosque aleatorio, regresión logística y redes neuronales son las que clasifican levemente mejor.</p>
+<p>Otras medidas
+Se describen brevemente la Precisión, la Sencibilidad, el F1, la Exactitud y el AUC. Se muestran gráficos de barras horizontales con todos los modelos y cada una de medidas, además de líneas punteadas marcando los modelos piso y techo.
+Nuevamente son los mismos 3 modelos los que mejor performan, y lo hacen muy parecido al modelo techo.</p>
+<h2 id="el-modelo-elegido">El modelo elegido</h2>
+<p>Se explica que se elige la Regresión Logística por estar en el top 3 de los que mejor se desempeñaron, además de tener la ventaja de ser altamente interpretable y computacionalmente poco costoso.</p>
+<p>Se interpretan las variables más importantes.</p>
+<p>(GRÁFICO DE BARRAS HORIZONTALES CON LOS COEFICIENTES)</p>
+<h2 id="mejoras-futuras">Mejoras Futuras</h2>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>

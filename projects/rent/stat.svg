@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.2" baseProfile="tiny" width="50mm" height="50mm" viewBox="0 0 5000 5000" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+ <g visibility="visible" id="MasterSlide_1_Predeterminado">
+  <desc>Master slide
+  </desc>
+  <rect fill="none" stroke="none" x="0" y="0" width="5000" height="5000"/>
+ </g>
+ <g visibility="visible" id="Slide_1_page8">
+  <g>
+   <path fill="rgb(255,140,0)" stroke="none" d="M 1850,4300 L 800,4300 800,3300 2900,3300 2900,4300 1850,4300 Z"/>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_1_0" stroke-width="100" stroke-linejoin="round" d="M 1850,4300 L 800,4300 800,3300 2900,3300 2900,4300 1850,4300 Z"/>
+  </g>
+  <g>
+   <path fill="rgb(108,166,205)" stroke="none" d="M 575,2900 L 300,2900 300,1900 850,1900 850,2900 575,2900 Z"/>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_2_0" stroke-width="100" stroke-linejoin="round" d="M 575,2900 L 300,2900 300,1900 850,1900 850,2900 575,2900 Z"/>
+  </g>
+  <g>
+   <path fill="rgb(108,166,205)" stroke="none" d="M 1125,2900 L 850,2900 850,2300 1400,2300 1400,2900 1125,2900 Z"/>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_3_0" stroke-width="100" stroke-linejoin="round" d="M 1125,2900 L 850,2900 850,2300 1400,2300 1400,2900 1125,2900 Z"/>
+  </g>
+  <g>
+   <path fill="rgb(108,166,205)" stroke="none" d="M 1675,2900 L 1400,2900 1400,1200 1950,1200 1950,2900 1675,2900 Z"/>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_4_0" stroke-width="100" stroke-linejoin="round" d="M 1675,2900 L 1400,2900 1400,1200 1950,1200 1950,2900 1675,2900 Z"/>
+  </g>
+  <g>
+   <path fill="rgb(108,166,205)" stroke="none" d="M 2225,2900 L 1950,2900 1950,900 2500,900 2500,2900 2225,2900 Z"/>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_5_0" stroke-width="100" stroke-linejoin="round" d="M 2225,2900 L 1950,2900 1950,900 2500,900 2500,2900 2225,2900 Z"/>
+  </g>
+  <g>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_6_0" stroke-width="100" stroke-linejoin="round" d="M 300,3500 L 300,4100"/>
+  </g>
+  <g>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_7_0" stroke-width="100" stroke-linejoin="round" d="M 800,3800 L 300,3800"/>
+  </g>
+  <g>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_8_0" stroke-width="100" stroke-linejoin="round" d="M 2900,3800 L 4300,3800"/>
+  </g>
+  <g>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_9_0" stroke-width="100" stroke-linejoin="round" d="M 1400,3300 L 1400,4300"/>
+  </g>
+  <g>
+   <path fill="rgb(108,166,205)" stroke="none" d="M 3800,3000 C 3616,3000 3459,2956 3300,2859 3141,2763 3026,2642 2934,2475 2842,2308 2800,2143 2800,1950 2800,1757 2842,1592 2934,1425 3026,1258 3141,1137 3300,1041 3459,944 3616,900 3800,900 3984,900 4141,944 4300,1041 4459,1137 4574,1258 4666,1425 4758,1592 4800,1757 4800,1950 4800,2143 4758,2308 4666,2475 4574,2642 4459,2763 4300,2859 4141,2956 3984,3000 3800,3000 L 3800,3000 Z"/>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_10_0" stroke-width="100" stroke-linejoin="round" d="M 3800,3000 C 3616,3000 3459,2956 3300,2859 3141,2763 3026,2642 2934,2475 2842,2308 2800,2143 2800,1950 2800,1757 2842,1592 2934,1425 3026,1258 3141,1137 3300,1041 3459,944 3616,900 3800,900 3984,900 4141,944 4300,1041 4459,1137 4574,1258 4666,1425 4758,1592 4800,1757 4800,1950 4800,2143 4758,2308 4666,2475 4574,2642 4459,2763 4300,2859 4141,2956 3984,3000 3800,3000 L 3800,3000 Z"/>
+  </g>
+  <g>
+   <path fill="rgb(255,140,0)" stroke="none" d="M 3828,900 L 3878,903 3928,909 3978,917 4028,928 4076,941 4125,957 4172,975 4218,996 4264,1020 4308,1045 4350,1073 4392,1104 4432,1136 4470,1171 4507,1207 4542,1246 4574,1286 4605,1328 4634,1371 4661,1416 4686,1462 4708,1510 4728,1559 4746,1608 4761,1659 4774,1710 4784,1762 4792,1814 4797,1867 4800,1920 4800,1973 4797,2026 4792,2079 4785,2131 4775,2183 4763,2234 4748,2285 4730,2335 4711,2384 4689,2431 4664,2478 4638,2523 3800,1950 3828,900 Z"/>
+   <rect fill="none" stroke="none" x="3800" y="900" width="1001" height="1624"/>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_11_0" stroke-width="100" stroke-linejoin="round" d="M 3828,900 L 3878,903 3928,909 3978,917 4028,928 4076,941 4125,957 4172,975 4218,996 4264,1020 4308,1045 4350,1073 4392,1104 4432,1136 4470,1171 4507,1207 4542,1246 4574,1286 4605,1328 4634,1371 4661,1416 4686,1462 4708,1510 4728,1559 4746,1608 4761,1659 4774,1710 4784,1762 4792,1814 4797,1867 4800,1920 4800,1973 4797,2026 4792,2079 4785,2131 4775,2183 4763,2234 4748,2285 4730,2335 4711,2384 4689,2431 4664,2478 4638,2523 3800,1950 3828,900 Z"/>
+   <rect fill="none" stroke="none" x="2800" y="900" width="2001" height="2101"/>
+  </g>
+  <g>
+   <path fill="none" stroke="rgb(255,140,0)" id="Drawing_12_0" stroke-width="100" stroke-linejoin="round" d="M 500,1500 L 1000,700"/>
+  </g>
+  <g>
+   <path fill="none" stroke="rgb(255,140,0)" id="Drawing_13_0" stroke-width="100" stroke-linejoin="round" d="M 1000,700 L 1700,1700"/>
+  </g>
+  <g>
+   <path fill="none" stroke="rgb(255,140,0)" id="Drawing_14_0" stroke-width="100" stroke-linejoin="round" d="M 1700,1700 L 2200,300"/>
+  </g>
+  <g>
+   <path fill="none" stroke="rgb(0,0,0)" id="Drawing_15_0" stroke-width="100" stroke-linejoin="round" d="M 4300,3500 L 4300,4100"/>
+  </g>
+ </g>
+</svg>
