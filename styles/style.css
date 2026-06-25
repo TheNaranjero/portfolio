@@ -296,6 +296,11 @@ section:not(#hero) {
     gap: 30px;
 }
 
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .project-card {
 
