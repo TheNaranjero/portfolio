@@ -6,7 +6,7 @@ const leftButton = document.querySelector(".left");
 const rightButton = document.querySelector(".right");
 
 let leftCard = 0;
-
+leftButton.classList.add("disabled")
 
 const cardsPerPage = 3;
 
@@ -20,9 +20,9 @@ const totalPages =
 
 function updateCarousel() {
 
-    const cardWidth = 350; // Adjust based on your CSS
+    const cardWidth = 420; // Adjust based on your CSS
 
-    const movement = leftCard * cardWidth + leftCard * 100; // 100px is the gap between cards
+    const movement =  leftCard * cardWidth + leftCard * 30; // 30px is the gap between cards
 
     carousel.style.transform =
         `translateX(-${movement}px)`;
@@ -34,9 +34,9 @@ function updateCarousel() {
 
 rightButton.addEventListener("click", function() {
 
-    if (leftCard < totalCards - 1) {
+    if (leftCard < totalCards - 2) {
 
-        leftCard++;
+        leftCard+=2;
 
         updateCarousel();
 
@@ -49,7 +49,7 @@ leftButton.addEventListener("click", function() {
 
     if (leftCard > 0) {
 
-        leftCard--;
+        leftCard-=2;
 
         updateCarousel();
 
@@ -66,7 +66,7 @@ function updateArrows() {
     }
 
 
-    if (leftCard === totalCards - 1) {
+    if (leftCard > totalCards - 3) {
         rightButton.classList.add("disabled");
     } else {
         rightButton.classList.remove("disabled");
